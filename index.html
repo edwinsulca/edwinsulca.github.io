@@ -9,6 +9,7 @@
 				font-family: fantasy;
 				font-size: 3em;
 				text-align: center;
+				margin: 15px;
 			}
 
 			h2{
@@ -42,16 +43,37 @@
 			.hola{
 				color: black;
 			}
-
+			.crel{
+				color: darkred;
+			}
+			.divi{
+				background: rgb(230, 230, 230);
+				width: 50%;
+				height: 200px;
+				overflow: auto;
+				border: 2px dashed lightgray;
+				padding: 10px;
+			}
+			#container{
+				width: 1000px;
+				margin: auto;
+				border: 1px solid red;
+				border-top: 50px solid purple;
+				padding: 15px;
+			}
+			#fotolista{
+				border: 10px ridge red;
+			}
 		</style>
 	</head>
 	<body>
 	<!--Este es un comentario -->
 	<!-- Hola tontos xd -->
+	<div id="container">
 	<h1 id="titulo1">
-	Mi primera pagina web</h1>
+	Mi primera <span class="crel">pagina</span> web</h1>
 
-	<h2>¿Qué es esto?</h2>
+	<div class="divi"><h2>¿Qué es esto?</h2>
     
     <p class="parrafo">
     	Es una <em>página </em>en la cual se vera los avances de <strong>mi aprendizaje en la programación</strong> de paginas web.</p>
@@ -60,7 +82,8 @@
 
     <p class="parrafo">
     	-Lograr crear una buena pagina web <br>
-     -Aprender el lenguaje de programación de memoria <br>
+     -Aprender el lenguaje de programación de memoria <br> </p>
+ </div>
 
     <h3>EL FACEBOOK DE UN GUAPO:</h3>
     <a target="_blank" href="https://www.facebook.com/profile.php?id=100014418246945">Click aquí</a>
@@ -71,7 +94,7 @@
     	<li><a href="#salto2">Segunda Linea</a></li>
     	<li><a href="#salto3">Tercera Linea</a></li>
     </ul>
-    <img src="https://vilmanunez.com/wp-content/uploads/2014/10/listas1.png" alt ="Imagen de una lista" width="350" height="250">
+    <img id="fotolista" src="https://vilmanunez.com/wp-content/uploads/2014/10/listas1.png" alt ="Imagen de una lista" width="350" height="250">
 
 
     <h2>Lista de Numeros</h2>
@@ -172,6 +195,6 @@
 
 
 
-
+  </div>
 	</body>
 </html>
